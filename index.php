@@ -49,5 +49,8 @@ $app->map ( "/users(/:id)", function ($userID=null) use($app, $dbmanager, $users
 	//TODO:we need to write also the response codes in the headers to send back to the client
 } )->via ( "GET", "POST", "PUT", "DELETE" );
 
+
+
+
 $app->run ();
 ?>
